@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #932507;
+            color: #050505;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            background: #f5f5f5;
+            color: #040404;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background: #e65c00;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-container:hover {
+            transform: scale(1.05);
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .product-image img:hover {
+            transform: scale(1.1);
+        }
+        .product-details h1 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .description {
+            color: #555;
+        }
+        .price {
+            font-size: 20px;
+            color: #e60000;
+            font-weight: bold;
+        }
+        
+        .add-to-cart {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .add-to-cart:hover {
+            background: #218838;
+        }
+        .ratings {
+            max-width: 600px;
+            margin: 30px auto 60px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(134, 62, 62, 0.1);
+            text-align: center;
+            overflow-y: auto;
+            max-height: 200px;
+        }
+        .rating {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .stars {
+            color: rgb(205, 179, 33);
+            font-size: 18px;
+        }
+        .rating:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #932507;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="product-list">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="headphone.jpg" alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h1>Wireless Headphones</h1>
+                    <p class="description">Experience crystal-clear sound with noise cancellation.</p>
+                    <p class="price">₹1500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="C:\xampp\htdocs\intern task 2\watch.jpg" alt="Product 2">
+                </div>
+                <div class="product-details">
+                    <h1>Smartwatch</h1>
+                    <p class="description">Track your health and stay connected on the go.</p>
+                    <p class="price">₹750</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="C:\xampp\htdocs\intern task 2\speaker.webp" alt="Product 3">
+                </div>
+                <div class="product-details">
+                    <h1>Bluetooth Speaker</h1>
+                    <p class="description">Portable and powerful speaker with deep bass.</p>
+                    <p class="price">₹2500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ratings">
+            <h2>Product Ratings</h2>
+            <div class="rating">
+                <p><strong>Nila</strong>: ★★★★★</p>
+            </div>
+            <div class="rating">
+                <p><strong>Sarang</strong>: ★★★★☆</p>
+            </div>
+            <div class="rating">
+                <p><strong>Mahesh</strong>: ★★★★★</p>
+            </div>
+            <div class="rating">
+                <p><strong>Aparna</strong>: ★★★★★</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 MotionCut. All rights reserved.</p>
+    </footer>
+</body>
+</html>
