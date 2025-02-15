@@ -1,0 +1,1 @@
+This project is a simple product showcase webpage designed using HTML, CSS, and JavaScript. The webpage features a responsive navigation bar, a product listing section, and a rating section, all visually structured inside styled boxes.
